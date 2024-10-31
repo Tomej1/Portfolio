@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.responsive-gifs img {
+					max-width: 100%;  /* The image will scale down to fit the width of the screen */
+					height: auto;     /* Maintain aspect ratio */
+			}
+		.responsive-video iframe {
+			max-width: 100%;
+			height: auto;
+			 min-height: 300px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">projects</a></li>
+								<li><a href="elements.html">About me</a></li>
+								<li><a href="FirstProject.html">Shura's Gauntlet</a></li>
+								<li><a href="SecondProject.html">OilBaby</a></li>
+								<li><a href="ThirdProject.html">Murder In Osaka</a></li>
+								<li><a href="FourthProject.html">Individual School projects</a></li>
+								<li><a href="FifthProject.html">Rts unit selection</a></li>
+								<li><a href="generic.html">Runbot</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Oilbaby</h2>
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/Oilbaby.jpg" alt="" /></span></div>
+								</div>
+								Feel free to try the Game <a href="https://drive.google.com/file/d/163XFxDx5jKMioLyOfNpz2R8yvKPTaVCX/view?usp=sharing" target="blank"> <b>HERE</b>.</a>
+								<br>
+								Please also visit my github page if you want a detailed view of all scripts that i contributed to in this project 
+									<a href="https://github.com/Tomej1/Oilbaby-CodeWorkspace" target="blank" alt= ><b>@TomejGithub</b></a>.
+
+							</div>
+								
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Gameplay trailer</h3>
+									<div class="responsive-video">
+										<iframe width="400" height="320" src="https://www.youtube.com/embed/IUWPsQdFcmA?si=O_eLUHxj2h5uLLup" 
+											title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+											encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+											allowfullscreen></iframe>
+									</div>
+
+									<p>
+										<h3 class="major"></h3>
+										<b>Introduction</b></br>
+										For this project, Oilbaby, I worked on core mechanics such as enemy AI behaviour and a torch based survival system.
+										As the player's torch light fades, the monsters draws closer. I also implemented sound effects, save system for collectibles. Explore 
+										videos and detailed code images below for an insight into my contributions.
+										
+										
+										</p>
+										
+										
+										<h4>Project information</h4>
+										<p>
+											<b>Engine:</b> Unity 3D, version 2022.3.27f1</br>
+											<b>Genre:</b> Horror </br>
+											<b>Project duration:</b> 2 weeks </br>
+											<b>My role:</b> Game programmer, working on main mechanics </br>
+											<b>Group:</b> 6 members </br>
+										</p>
+
+									
+
+									<h3 class="major">My contributions</h3>
+
+									
+									<p><div class="responsive-video"><span class="image right">
+										<iframe width="400" height="320" src="https://www.youtube.com/embed/SVyR-Io1YXE?si=HlXBu6bvSKpmdwbO" 
+										title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+										encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+										allowfullscreen>
+										</iframe>
+									</span> <b>1. Functionality of the torch</b></br>
+									<b>• I created</b> the functionality of the torch in the game, the main mechanic. The player is required to keep the torch lit all the time in the game, if 
+									the torch burns out the monsters will creep closer. The player can claim areas in the game by lighting torches on the wall along the cave, this will create safe zones for the player. 
+									Shown in the video below. The fire will eventually burn out if not reignited, which forces the player to move forward in the level. <b>See images below, press to enlarge and shrink</b>. </p></div>
+
+							
+								<br>
+								<div id="imgGallery">
+									<img src="images/OilbabyTorchLogic.png" alt= "TL">
+									<img src="images/OilbabyTorchLogic1.png" alt="TL1">
+									<img src="images/OilbabyInteracting.png" alt="Interact">
+									<img src="images/OilbabyTorchReignition.png" alt="Interact">
+										
+								</div>
+								
+							
+							</br></br>
+
+							<p><span class="image left"><img src="images/EnemyApproaching.gif" alt="" /></span> <b>• To create</b> a feeling of horror, I decided to implement a monster (oilbaby) that would creep closer to the player depending on how much the players torch was burning (light source). 
+								This would create a sence of anxiety and distress as the game got darker the monster would come closer and start crying loud. This was done by simply marking the player as the 
+								monsters target and allowing it to move closer to the player depending on the light source in the players torch fire. <b>See images below, press to enlarge and shrink</b>. </p>
+								
+
+								<div id="imgGallery">
+									<img src="images/OilbabyEnemy.png" alt="enemy">
+									<img src="images/OilbabyTorchSoundLight.png" alt="TSL">
+								</div>
+							</br>
+							<h3 class="major"></h3>
+						
+						<p><div class="responsive-video"><span class="image right">
+							<iframe width="400" height="320" src="https://www.youtube.com/embed/IUWPsQdFcmA?si=O_eLUHxj2h5uLLup" 
+								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+								encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+								allowfullscreen></iframe>
+						</span> <b>2. Character controller and soundeffects</b></br>
+							At the end of the project I worked on implementing sounds for walking, running, slow breathing and hard breathing to make the game more interactive. This was fun to work with and it made 
+							the game seem more alive. I created scripts that would play certain sounds depending on the players actions. <b>See images below, press to enlarge and shrink</b> </p></div>
+
+						</br>
+							<p>
+									<div id="imgGallery">
+										<img src="images/OilbabayMovement.png" alt="Movement">
+										<img src="images/OilbabyCC.png" alt="CC">
+										<img src="images/OilbabyMovement1.png" alt="Movement1">
+										<img src="images/OilbabyMovement2.png" alt="Movement2">
+									</div>
+								</p>
+						</br>
+
+						<h3 class="major"></h3>
+						<b>3. Menu functionality and save system functionality</b></br>
+								In the project we wanted the player to be able to find notes that would display information and clues about what might have happened previous explorers in the cave.
+								So I created a simple menu system that that would show a collection of collectables that the player picked up. If the player picked up something it would get saved to a 
+								json file so that even if the player died they could still keep their collectables in their inventory. Below is images and gif for how it works. 
+								<b>See images and gif below, press to enlarge and shrink</b>.</br></br>
+								
+								<div id="imgGallery">
+									<img src="images/OilbabySaveSystem.png" alt="saves">
+									<img src="images/OilbabyLoadscene.png" alt="load">
+									<img src="images/ItemPickUp.gif" alt="Itempickup">
+								</div>
+								
+								<h3 class="major"></h3>
+								<h3>What comes next</h3>
+								<p>
+									Working with AI, sound and lights were a lot of fun and it is definetly something I would like to dive deeper into in the future. I am always looking to improve hoping to learn 
+									more about programming, and how it can be used to create interesting things for games.
+
+									Please feel free to read more <a href="elements.html"><b>About me</b></a> and please check out my other <a href="index.html"><b>Projects</b></a> for additional info about my contributions so far to game development.
+									I can also be contacted on <a href="mailto:Tom.ellstrom@gmail.com"><b>Tom.ellstrom@gmail.com</b></a>.
+								</p>
+
+
+
+								<h3 class="major"></h3>
+								<h2>Here are some of my other projects</h2>
+
+								<section class="features">
+									<article>
+										<a href="FifthProject.html" class="image"><img src="images/RTSUM.png" alt="" /></a>
+										<h3 class="major">RTS unit selection</h3>
+										<p>This was a project done in my free time because of my passion for RTS games, exploring RTS-based mechanics.</p>
+										<a href="FifthProject.html" class="special">View project</a>
+									</article>
+									<article>
+										<a href="ThirdProject.html" class="image"><img src="images/Osakacookies.png" alt="" /></a>
+										<h3 class="major">Murder In Osaka</h3>
+										<p>This game is a mystery and investigation game with multiple endings. Where the player needs to find clues in order to 
+											solve the crime. I worked on Menu UI, player movement and AI movement.</p>
+										<a href="ThirdProject.html" class="special">View project</a>
+									</article>
+									
+									
+								</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Feel free to connect with me on my various platforms.</p>
+						
+						<ul class="contact">
+							<li class="icon solid fa-home"><a href="index.html" >Projects home page</a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:Tom.ellstrom@gmail.com">Tom.ellstrom@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/Tomej1" target= "blank">TomEllstromJohansson.github.io</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/tom-ellstr%C3%B6m-johansson-7393a0272/" target= "blank">www.linkedin.com/Tomellstrom</a></li>
+
+							
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP, editet by Tom Ellström Johansson</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.galleryview.js"></script>
+
+	</body>
+</html>

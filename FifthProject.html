@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+
+		.responsive-gifs img {
+					max-width: 100%;  /* The image will scale down to fit the width of the screen */
+					height: auto;     /* Maintain aspect ratio */
+				}
+		.responsive-video iframe {
+			max-width: 100%;
+			height: auto;
+			 min-height: 300px;
+				}
+
+	</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="elements.html">About me</a></li>
+								<li><a href="FirstProject.html">Shura's Gauntlet</a></li>
+								<li><a href="SecondProject.html">OilBaby</a></li>
+								<li><a href="ThirdProject.html">Murder In Osaka</a></li>
+								<li><a href="FourthProject.html">Individual School projects</a></li>
+								<li><a href="FifthProject.html">Rts unit selection</a></li>
+								<li><a href="generic.html">Runbot</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>RTS Unit Selection</h2>
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/RTSUM.png" alt="" /></span></div>
+								</div>
+								Feel free to check out the scripts created for this project on my 
+									<a href="https://github.com/Tomej1/RTS-Mechanics/tree/main"  target="blank"><b>github</b>.</a>
+								
+
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Why RTS?</h3>
+									<p>I have always been a fan of RTS games. Some personal favorites are, the Battle for the Middle Earth series especially BFTME II Wrath of the Lich King, Civilisation 5, 
+										Age of Mythology, Age of Empires 2 and many more.</p>
+
+									<p>This interest in RTS games made me interested in learning how the mechanics work and how they are created from scratch and thus I created this project in order to 
+										try my hand at some of these mechanics. With my primary focus being the Unit selection and movement mechanics.</p>
+
+									<h3 class="major">Introduction</h3>
+									<p>I began the project with simply creating a Unity project. But presented with a empty world I was quite lost at what to do so I started by making a list of all the things 
+										I wanted to implement and in what order.
+									</p>
+									
+
+										<h3 class="major"></h3>
+										<b>Selecting and moving units</b></br>
+										 <b>I created</b> a way for the player to interact with a unit adding it into a dictionary of selected units, giving it a nav agent and also giving it an id. When the target is pressed with the 
+										 leftmouse button it will get added to the selection dictionary. If we then press right click we will move the selected unit to the position pressed. <b>See images and gif below, press to enlarge and shrink</b>.
+
+										 <div id="imgGallery">
+											<img src="images/NavAgent.png" alt= "NAVAgent">
+											<img src="images/Selection.png" alt="selection">
+											<img src="images/SelectionDictionary.png" alt="selection">
+											<img src="images/SelectionTrigger.png" alt="SelectionT">
+											<img src="images/Moving.png" alt="MoveUnit">
+											<img src="images/MovingAroundGif.gif" alt="MoveUnitGif">
+
+											
+										</div>
+									</br>
+
+										<b>Since</b> just pressing one unit at a time is not really much of an RTS game we need to be able to select multiple units. This was done by letting the player add 
+										in more units as long as they held down leftshift when pressing the mouse button. To make it easier to see what units are selected I also added in a highlight marker for the 
+										units that lit up green whenwever a unit was selected. <b>See images and video below, press to enlarge and shrink</b>.
+										
+										<div id="imgGallery">
+											<img src="images/GreenBorder.png" alt= "GreenB">
+											<img src="images/GreenInGame.png" alt= "GreenB">
+											<img src="images/MoveMultiple.png" alt="MoveAroundMultiple">
+											<img src="images/MultipleSelectGif.gif" alt="MultipleSelect">
+										</div>
+
+										<h3 class="major"></h3>
+										<p><div class="responsive-gifs"><span class="image right">
+											<img src="images/RTStestGif.gif" alt="RTSGif">
+										</span> <b>Final result</b><br>
+										I have implemented a way for the player to draw a bounding box and select multiple targets using a green square. However this implementation is not my own code 
+										since it was added using a tutorial. However I will still show the final result of this implementation below. You can also check out all the scripts for this project 
+										on my <a href="https://github.com/Tomej1/RTS-Mechanics/tree/main"  target="blank"><b>github</b>.</a></p></div>
+										
+
+										<br>
+										
+
+										<h3 class="major"></h3>
+									<h2>What Comes next</h2>
+									<p>
+										This was a very fun side project to have, as I could dive deeper into the mechanics of unit selection and movement for an RTS based game. There is so much more 
+										that could be explored for this project, such as: unit building, unit attacking, buying units from different buildings and so on. I will continue to improve 
+										upon the mechanics of this game and start other project where I can learn more about other base mechanics for different games. This has been a really fun and 
+										giving experience and is definetly an area that I would like to dive deeper into in the future.
+									</p>
+
+									<h3 class="major"></h3>
+									<h2>View my other projects aswell</h2>
+
+									<section class="features">
+										<article>
+											<a href="FirstProject.html" class="image"><img src="images/Shuras.png" alt="" /></a>
+											<h3 class="major">Shura's Gauntlet</h3>
+											<p>This project has been my most ambitious project so far. It is a fast paced boss rush fighting game. 
+												I worked on the mechanics for the fighting system and playerinput system.</p>
+											<a href="FirstProject.html" class="special">View project</a>
+										</article>
+										<article>
+											<a href="generic.html" class="image"><img src="images/Runbot.jpg" alt="" /></a>
+											<h3 class="major">Runbot</h3>
+											<p>The first game project I was ever a part of. A platformer game with puzzel solving. I worked AI behaviour, 
+												respawn system and animations for some game objects.</p>
+											<a href="generic.html" class="special">View project</a>
+										</article>
+										
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Feel free to connect with me on my various platforms.</p>
+						
+						<ul class="contact">
+							<li class="icon solid fa-home"><a href="index.html" >Projects home page</a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:Tom.ellstrom@gmail.com">Tom.ellstrom@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/Tomej1" target= "blank">TomEllstromJohansson.github.io</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/tom-ellstr%C3%B6m-johansson-7393a0272/" target= "blank">www.linkedin.com/Tomellstrom</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP, editet by Tom Ellström Johansson</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.galleryview.js"></script>
+
+	</body>
+</html>

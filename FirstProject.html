@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+		<style>
+		.responsive-gifs img {
+					max-width: 100%;  /* The image will scale down to fit the width of the screen */
+					height: auto;     /* Maintain aspect ratio */
+				}
+		.responsive-video iframe {
+			max-width: 100%;
+			height: auto;
+			 min-height: 300px;
+				}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="elements.html">About me</a></li>
+								<li><a href="FirstProject.html">Shura's Gauntlet</a></li>
+								<li><a href="SecondProject.html">OilBaby</a></li>
+								<li><a href="ThirdProject.html">Murder In Osaka</a></li>
+								<li><a href="FourthProject.html">Individual School projects</a></li>
+								<li><a href="FifthProject.html">Rts unit selection</a></li>
+								<li><a href="generic.html">Runbot</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>shuras' gauntlet</h2>
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/Shuras.png" alt="" /></span></div>
+								</div>
+								Please check out and play the game on 
+								<a href= "https://shuras-gauntlet.itch.io/shuras-gauntlet" target="blank"> <b>ShurasGauntlet.itch.io</b></a>
+								
+
+							</div>
+						</header>
+
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Gameplay trailer</h3>
+									<p>
+										<div class="responsive-video">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/ry1JVVMaW0Y?si=J8_AEaataAbl6CyW" 
+												title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+												gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+												</iframe>
+										</div>
+
+									</p>
+
+									<p>
+										<h3 class="major"></h3>
+										<b>Introduction</b></br>
+										I worked on the fighting implementation and how it executed in the game, creating codes that would connect animations with the players inputs to show flashy combos. 
+										I also created behaviour patterns for different bosses the player could face with a focus of making the fights more challenging and complex the more the player progressed in the game.
+										
+										</p>
+										
+										<h4>Project information</h4>
+										<p>
+											<b>Engine:</b> Unity 3D, Version 2022.3.10f1</br>
+											<b>Genre:</b> Fighting , action </br>
+											<b>Project duration:</b> 10 weeks </br>
+											<b>My role:</b> Game programmer working with inputsystems, animations and Player & AI behaviour </br>
+											<b>Group:</b> 10 members </br>
+										</p>
+
+									
+
+									<h3 class="major">My contributions</h3>
+									<p><b>1. Fighting controls and mechanics</b></br></p>
+									<b>• I created</b> a dynamic fighting system that connected player inputs to lists and dictorinaries of combos and animations. If the combo was in the lists it would be displayed and performed by the player
+										creating an interactive fighting style. <b>See images below, press to enlarge and shrink</b>.
+
+										<div id="imgGallery">
+											<img src="images/ComboLists.png" alt= "combos">
+											<img src="images/HandleAttack.png" alt="attackCode">
+											<img src="images/MatchesCombo.png" alt="matchCombo">
+											<img src="images/PerformCombo.png" alt="executeCombo">
+										</div>
+
+					</br>
+							
+									<b>• Since</b> single attack combos did not feel engaging enough i implemented ways for the player to keep doing combos as long as the follow up inputs were viable combos. <b>See images below, press to enlarge and shrink</b>.
+									<div id="imgGallery">
+										<img src="images/ComboLists.png" alt= "combos">
+										<img src="images/ExecuteCombo.png" alt="executeCombo">
+									</div>
+					</br>
+								<b>• Problems</b>  were that if the player just kept attacking the player would be stuck in doing combo loops which made the character freeze. To fix this i created ways for the program to see if the additional
+								inputs were viable, if not viable the attacks would be reset to the start stage and they player would perform attacks all over again. <b>See images below, press to enlarge and shrink</b>.
+								<div id="imgGallery">
+									<img src="images/ClearInputsCode.png" alt="clear">
+									<img src="images/PlayerController.png" alt="clear">
+								</div>
+						</br>
+							
+								<b>• This</b> was possible to implement since I had created a animation controller that responded to the code in a manner which would connected animation and code together for the combos. <b>See images below, press to enlarge and shrink</b>.
+								<div id="imgGallery">
+									<img src="images/PlayerController.png" alt="clear">
+								</div>
+						</br>
+
+							<h3 class="major"></h3>
+								<b>2. Connecting playerinputsystem to multiple controls for extra accessability</b>
+						</br>
+								I created an inputsystem that was dynamic depending on what scene the player was in. If the player is in the main hubscene of the world, certain movement controls would be used.
+								If the player then engaged with a boss a new movement controller would load. Following are the code snippets for the inputsystem and how the inputsystem looked. <b>See images below, press to enlarge and shrink</b>.
+						</br>
+
+									<div id="imgGallery">
+										<img src="images/InputSystem.png" alt= "combos">
+										<img src="images/InitializePIS.png" alt="codes">
+										<img src="images/Attacking.png" alt="attackCode">
+										<img src="images/MoveFunctions.png" alt="codes">
+										<img src="images/HubWorld.png" alt="codes">
+									</div>
+						</br>
+
+							<h3 class="major"></h3>
+
+							<p><div class="responsive-video"><span class="image right">
+								<iframe width="400" height="320" src="https://www.youtube.com/embed/TPbVf6kU2Bs?si=NKVFGZFqmx0Z_FJq" title="YouTube video player" 
+								frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+								picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>	
+							</span> <b>3. Displaying information about the fighting and tutorial showcase</b> <br>
+							I created a scene in the game which purpose was to showcase the different combos in the game for the player to see. Since this scene would display the fighting combos
+							, I thought it would be appropriate to do so in a flashing way. The showcase shows the camera spinning around the main character 
+							in the game and showing the specific combo that the player presses. This was done through Unity canvas and code connected with certain animations. <b>See images below, press to enlarge and shrink</b>.</p></div>
+
+
+							
+						</br>
+								
+								
+								
+								<div id="imgGallery">
+									<img src="images/InspectorDisplay.png" alt= "combos">
+									<img src="images/CanvasCode.png" alt="codes">
+								</div>
+						</br>		
+
+								<h3 class="major"></h3>
+								<b>4. AI behaviour and animations</b>
+							</br>
+								<b>• I created</b> an interesting and immersive AI behaviour. The idea behind the creatiion of the AI behaviour was to create states for different AI movements and descisions. I worked mostly on the attacking state and how 
+								that made the AI choose the best option for the current situation. The AI would choose the attack randomly when deciding to attack. Now this was the way I was able to implement AI attack and different outputs. 
+								As the player progressed in the game the bosses would get access to more attacks which would create a more challenging experience. I would however want to create a more advanced system where the AI made certain actions and 
+								attacks according to what the players actions were. This would make the fighting even more immersive. <b>See images below, press to enlarge and shrink</b>.
+								<div id="imgGallery">
+									<img src="images/AiState.png" alt= "animation">
+									<img src="images/AiAnimation.png" alt= "animation">
+									
+								</div>
+							</br>
+							<b>• Creating</b> seperate animation controllers for the  bosses made the implementation of certain behaviours easier. Since we could add in certain attacks 
+								and create the feeling that the bosses presentet unique challenges. As you can see in the lower right of the images below: Demon3, Naga, Yaksha and EvilBom all have different attack patterns. The first boss uses only punching attacks 
+								while the next boss Naga implements kicking and additional punching combos. As the player progresses in the game they can fight the final boss, 
+								EvilBom who has a multitude of different attacks and combos. <b>See images below, press to enlarge and shrink</b>.
+								<div id="imgGallery">
+									<img src="images/Demon3C.png" alt= "combos">
+									<img src="images/NagaC.png" alt="codes">
+									<img src="images/YakshaC.png" alt="codes">
+									<img src="images/FinalBossC.png" alt="codes">
+								</div>
+							</br>
+								<b>Example of different boss attacks</b> </br>
+
+									<div class="responsive-gifs">
+											<img src="images/YakshaGif.gif" alt="yakshaGif">
+											<img src="images/NagaGif.gif" alt="nagaGif">
+										</div>
+							</br>
+						</br>
+
+								
+									<h3 class="major"></h3>
+									<h2>What I would like to improve</h2>
+									<p>
+										If I were to continue on with this project I would like to improve upon the fighting aspect of the game. I do enjoy the fighting but I also think it is not polished enough, there is still much to add in. 
+										Such as additional combos, more diverse AI behaviour were their attacks are not as randomized as they are now. I would like the AI to make more calculated descisions such as blocking, sidestepping, choosing 
+										certain attacks depending on the player actions. </br></br>
+
+										I would also like to improve upon my code writing, as it looks now it is hard for someone not accustomed to the code to understand what is going on. I am a firm believer that more comments in the code is not always the 
+										best approach to explaining the code. I want the code to speak for itself and be clean and understandable for the one reading it.
+										
+									</p>
+									
+
+									<h3 class="major"></h3>
+									<h2>What comes next</h2>
+								<p>
+									I am always looking to improve the mechanics I have created for games. I know this fighting system is not perfect, and I would if given more time improve upon the smoothness
+									of the fighting. Another thing I would like to improve is the overall structure of my code to make it as understandable and clean as possible. I wish to work on more projects were my coding 
+									will be put to the test. I am learning so much every day and there is still so much more to learn.
+
+									Please feel free to read more <a href="elements.html"><b>About me</b></a> and please check out my other <a href="index.html"><b>Projects</b></a> for additional info about my contributions so far to game development.
+									I can also be contacted on <a href="mailto:Tom.ellstrom@gmail.com"><b>Tom.ellstrom@gmail.com</b></a>.
+								</p>
+
+								<p>
+
+									<h3 class="major"></h3>
+									<h2>View my other projects aswell</h2>
+
+									<section class="features">
+										<article>
+											<a href="SecondProject.html" class="image"><img src="images/Oilbaby.jpg" alt="" /></a>
+											<h3 class="major">Oilbaby</h3>
+											<p>For this project, I worked on core mechanics, enemy AI behaviour and a torch based survival system.
+												I also implemented sound effects and a save system for collectibles.</p>
+											<a href="SecondProject.html" class="special">View project</a>
+										</article>
+										<article>
+											<a href="ThirdProject.html" class="image"><img src="images/Osakacookies.png" alt="" /></a>
+											<h3 class="major">Murder In Osaka</h3>
+											<p>This game is a mystery and investigation game with multiple endings. Where the player needs to find clues in order to 
+												solve the crime. I worked on Menu UI, player movement and AI movement.</p>
+											<a href="ThirdProject.html" class="special">View project</a>
+										</article>
+										
+									</section>
+
+								</div>
+							</div>
+
+					
+							
+							
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Feel free to connect with me on my various platforms.</p>
+						
+						<ul class="contact">
+							<li class="icon solid fa-home"><a href="index.html" >Projects home page</a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:Tom.ellstrom@gmail.com">Tom.ellstrom@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/Tomej1" target= "blank">TomEllstromJohansson.github.io</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/tom-ellstr%C3%B6m-johansson-7393a0272/" target= "blank">www.linkedin.com/Tomellstrom</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP, editet by Tom Ellström Johansson</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.galleryview.js"></script>
+
+	</body>
+</html>

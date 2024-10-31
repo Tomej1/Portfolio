@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.responsive-gifs img {
+					max-width: 100%;  /* The image will scale down to fit the width of the screen */
+					height: auto;     /* Maintain aspect ratio */
+			}
+		.responsive-video iframe {
+			max-width: 100%;
+			height: auto;
+			 min-height: 300px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="elements.html">About me</a></li>
+								<li><a href="FirstProject.html">Shura's Gauntlet</a></li>
+								<li><a href="SecondProject.html">OilBaby</a></li>
+								<li><a href="ThirdProject.html">Murder In Osaka</a></li>
+								<li><a href="FourthProject.html">Individual School projects</a></li>
+								<li><a href="FifthProject.html">Rts unit selection</a></li>
+								<li><a href="generic.html">Runbot</a></li>
+
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Runbot</h2>
+								
+
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/Runbot.jpg" alt="" /></span></div>
+								</div>
+								Free free to check out and play the game <a href="https://drive.google.com/file/d/1G2pP820v6W7yOWuIIVpPH7PMbu197CBW/view?usp=sharing" target="blank"><b>Here</b>.</a>
+								
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Gameplay Trailer</h3>
+									
+									<p>
+										<div class="responsive-video">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/-0kt-R0AlOM?si=tzV0GBMi0PykbsEK" title="YouTube video player" 
+										frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+										referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										</div>
+
+									</p>
+
+									<p>
+										<h3 class="major"></h3>
+										<b>Introduction</b></br>
+										Short introduction
+										
+										</p>
+										
+										
+										<h4>Project information</h4>
+										<p>
+											<b>Engine:</b> Unity 3D, Version 2021.3.13f1</br>
+											<b>Genre:</b> Platform, Puzzle</br>
+											<b>Project duration:</b> 2 weeks</br>
+											<b>My role:</b> Game programmer working with AI behaviour, respawn system and Items and doors animation </br>
+											<b>Group:</b> 6 members </br>
+										</p>
+
+									
+
+									<h3 class="major">My contributions</h3>
+
+									<p><span class="image right">
+										<img src="images/AIStateGif.gif" alt="ItemDoor" />
+									</span> <b>AI behaviour and state</b></br>
+									<b>I made</b> the AI opponent behave in different ways. This was done through an AI State machine with ENUMS for 3 different states: 
+									STATIONARY, SHOOTING, PATROLLING. The AI in the game have predetermined behaviour, but in some specific situations the AI will switch between 
+									states. In the GIF below the AI goes from stationary to shooting when the player enters a certain trigger hitbox.
+									<b>See images below, press to enlarge and shrink</b>. 
+									
+									<br>
+									<div id="imgGallery">
+										<img src="images/AIENUM.png" alt="AIE">
+										<img src="images/AIMove1.png" alt="AIMOVE" />
+										<img src="images/AIMove2.png" alt="AIMOVE">
+									</div>
+									</p>
+									
+									<br>
+
+									<p><span class="image left"><img src="images/ItemDoorGif.gif" alt="ItemDoor" /></span>
+										<b>Items dropsystem, Animations for items and doors</b></br>
+									<b>Next</b> contribution I made was a loot system for the AI, which saves the current loot in the inspector and loads that model into the 
+										game when the AI dies. These items are good to collect since some of them are keys that opens doors. In order to make the items more interactive 
+										in the game I also created a small animation for the items and doors in Unity animations. This made the level objects make the world more alive and 
+										interesting. Check GIF for item and door animation in game. <b>See images below, press to enlarge and shrink</b>.
+
+										<div id="imgGallery">
+											<img src="images/ItemToDrop.png" alt="ItemDrop">
+											<img src="images/UnlockDoor.png" alt="UnlockDoor" />
+										</div>
+									</p>
+
+									<br>
+
+									<p><span class="image right"><img src="images/RespawnSystemGif.gif" alt="ItemDoor" /></span>
+										<b>Respawn system</b></br>
+									<b>I also</b> worked on a respawn system for the player in the game. I placed the respawn point at different places in the game. 
+									These were put in positions that would reward the player when they made progress in the game. I created a script that would handle 
+									the players position, and if they passed a certain checkpoint that respawn point would be set to active and respawn the player there on death.
+									These were marked on the level as lanterns with light, when the player passed, the light would activate symbolizing the respawn point.
+									<b>See images below, press to enlarge and shrink</b>.
+										<div id="imgGallery">
+											<img src="images/RespawnPoint.png" alt="RespawnPoint">
+											<img src="images/CurrentSpawn.png" alt="CurrentSpawn" />
+										</div>
+									</p>
+
+
+									<h3 class="major"></h3>
+									<h2>What I would like to improve</h2>
+									<p>
+										I do enjoy AI behaviour, movement and how they react to the player in the game. In this game the movement of the AI is randomized over the navmesh area, 
+										this is not ideal when it comes to a game with enemy AI. I would like to create a behaviour that would be more responsive to the players actions, like patrolling, 
+										chasing, shooting and much more. There is so much to explore and I am constantly learning new fun things. I would want to work more on the optimization on future project 
+										in order to make the experience for the player much more engaging.
+										
+									</p>
+									
+
+									<h3 class="major"></h3>
+									<h2>What comes next</h2>
+								<p>
+									I am looking forward to learning more about game mechanics and it is something I will dive deeper into in future projects. Most of the games nowdays use different forms AI 
+									in the game, and it is therefore very important that it is as interesting and engaging as possible for the player. I have so much to learn and am looking forward to working with this 
+									in the future.
+									<br><br>
+									Please feel free to read more <a href="elements.html"><b>About me</b></a> and please check out my other <a href="index.html"><b>Projects</b></a> for additional info about my contributions so far to game development.
+									I can also be contacted on <a href="mailto:Tom.ellstrom@gmail.com"><b>Tom.ellstrom@gmail.com</b></a>.
+								</p>
+
+
+									<h3 class="major"></h3>
+									<h2>Here are some of my other projects</h2>
+									<section class="features">
+										<article>
+											<a href="FourthProject.html" class="image"><img src="images/ChineseCheckers.png" alt="" /></a>
+											<h3 class="major">Individual school projects</h3>
+											<p>Here are some small individual projects I did during my studies at Södertörn University</p>
+											<a href="FourthProject.html" class="special">View project</a>
+										</article>
+										<article>
+											<a href="FirstProject.html" class="image"><img src="images/Shuras.png" alt="" /></a>
+											<h3 class="major">Shura's Gauntlet</h3>
+											<p>This project has been my most ambitious project so far. It is a fast paced boss rush fighting game. 
+												I worked on the mechanics for the fighting system and playerinput system.</p>
+											<a href="FirstProject.html" class="special">View project</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major">Get in touch</h2>
+						<p>Feel free to connect with me on my various platforms.</p>
+						
+						<ul class="contact">
+							<li class="icon solid fa-home"><a href="index.html" >Projects home page</a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:Tom.ellstrom@gmail.com">Tom.ellstrom@gmail.com</a></li>
+							<li class="icon brands fa-github"><a href="https://github.com/Tomej1" target= "blank">TomEllstromJohansson.github.io</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/tom-ellstr%C3%B6m-johansson-7393a0272/" target= "blank">www.linkedin.com/Tomellstrom</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP, editet by Tom Ellström Johansson</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.galleryview.js"></script>
+
+	</body>
+</html>

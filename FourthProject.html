@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Solid State by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.responsive-gifs img {
+						max-width: 100%;  /* The image will scale down to fit the width of the screen */
+						height: auto;     /* Maintain aspect ratio */
+					}
+			.responsive-video iframe {
+				max-width: 100%;
+				height: auto;
+				 min-height: 300px;
+					}
+			</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Projects</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Projects</a></li>
+								<li><a href="elements.html">About me</a></li>
+								<li><a href="FirstProject.html">Shura's Gauntlet</a></li>
+								<li><a href="SecondProject.html">OilBaby</a></li>
+								<li><a href="ThirdProject.html">Murder In Osaka</a></li>
+								<li><a href="FourthProject.html">Individual School projects</a></li>
+								<li><a href="FifthProject.html">Rts unit selection</a></li>
+								<li><a href="generic.html">Runbot</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Individual School projects</h2>
+
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/TowerOfHanoi.png" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/ChineseCheckers.png" alt="" /></span></div>
+
+								</div>
+								<br>
+								Please check out the scripts I worked on for these projects. <br>
+								Check out Tower of Hanoi <a href="https://github.com/Tomej1/Tower-of-Hanoi" target="blank" ><b>HERE</b></a><br>
+								Also check out the scripts I worked on in ChineseCheckers <a href="https://github.com/Tomej1/ChineseCheckers" target="blank" ><b>HERE</b></a>
+								
+							</div>
+						</header>
+
+						<!-- Content -->
+						<div class="wrapper">
+							<div class="inner">
+
+								<h3 class="major">Tower of Hanoi</h3>
+								This projects was done during my first programming course taken at Södertörn University. It was the first real challenge I faced on my road to learning 
+								programming and game development. <br><br>
+
+								<b>Project information</b> <br>
+								<b>Created in:</b> Microsoft Visual Studio 2022<br>
+								<b>Project Template:</b> Console App .Net for Windows, Linux and macOS.<br>
+								<b>Framework:</b> MonoGame<br>
+
+								<h3 class="major"></h3>
+								<h3>Workflow</h3>
+								<p>
+								<b>I had</b> to create a way for the discs and pillars to be drawn onto the screen according to the amount of discs and pillars in the
+								program. <b>Press images to enlarge and shrink</b>.
+								<div id="imgGallery">
+									<img src="images/LoadContent.png" alt= "loadA">
+									<img src="images/LoadingInformationAboutDiscs.png" alt="loadD">
+									<img src="images/LoadInPillar.png" alt="loadP">
+									<img src="images/Drawboard.png" alt="drawA">
+									<img src="images/TowerOfHanoi.png" alt="view">
+								</div>
+							</p>
+							<p>
+								<b>The next</b> steps were to implement a way for the discs to move from one pillar to the next. This had to vary depending on the amount of discs.
+								It was also important to create a movement pattern for the discs so that they went up and then to the center of the next pillar before going down. 
+								In order to make it as smooth as possible a statemachine was creating, this made it possible to move one disc at a time, which was a requirement for the project.
+								<b>Press images to enlarge and shrink</b>.
+
+								<div id="imgGallery">
+									<img src="images/GameIterationDependingOnDisc.png" alt= "gameIterationDiscs">
+									<img src="images/LogicForMovement.png" alt="logicMove">
+									<img src="images/DiscSpeed.png" alt="discSpeed">
+									<img src="images/GameIterationLogic.png" alt="gameIterationLogic">
+									<img src="images/StateMachine.png" alt="stateMachine">
+
+									
+								</div>
+							</p>
+							
+										<b>Final result</b><br>
+										Here is the final result of all of these implementations. Feel free to check out the scripts for the project on my <a href="https://github.com/Tomej1/Tower-of-Hanoi"  target="blank"><b>github</b>.</a>
+
+										<div class="responsive-gifs">
+											<img src="images/TowerOfHanoi.gif" alt="RTSGif">
+										</div>
+									
+
+
+								<br>
+								<br>
+								<h3 class="major">Chinese Checkers</h3>
+								This project was part of our second course of programming. We recieved an already created chinese checkers project, in this project we had to add in 
+								 functions for all the already probivided methods. Our task was to read and understand the code provided and then apply solutions in order to create 
+								 a functioning chinese checkers game.<br><br>
+								
+									<ul>
+										Here are some of the steps we had to implement in the project:
+										<li>Create movable pieces for the player</li>
+										<li>Make the pieces unable to move outside of the board</li>
+										<li>Create a way for the pieces to move on the board</li>
+										<li>Create movement logic for pieces, single movement and jumping over other pieces</li>
+										<li>Functions for saving and loading games</li>
+										<li>Create logic for AI players and decision making according to scoring and Minimax</li>
+									</ol>
+								 
+								<br>
+								<b>Project information</b> <br>
+								<b>Created in:</b> Unity version 2021.3.25f1.<br>
+								<b>IDE</b> Microsoft Visual Studio 2022<br>
+
+								<h3 class="major"></h3>
+								<h3>Workflow</h3>
+
+								<p>
+								<b>First</b> thing that I did was add in some ground laying logic for the game;<br>
+								 A way for the program to know what squares were immovable for the player pieces.
+								 Draw out the pieces for each player depending on the amount of players, if there are 2 players,
+								 each player recieves 20 pieces if there are more each player recieves 15 pieces. 
+								 <b>Press images to enlarge and shrink</b>.
+
+								 <div id="imgGallery">
+									<img src="images/InvalidAndEmpty.png" alt= "InvalidandEmptyPos">
+									<img src="images/StartPiecePosition.png" alt="AddPieces">
+									<img src="images/PlacePieces.png" alt="LoadInPieces">
+									
+								</div>
+								</p>
+
+								<p>
+									<b>Then</b> I created a movement logic for the pieces that would handle single place movement and the the ability to keep jumping over other pieces 
+									if the the requirement for the jump was avaible. <b>Press images to enlarge and shrink</b>.
+									<div id="imgGallery">
+										<img src="images/MoveIfAllowed.png" alt= "AllowMove">
+										<img src="images/MoveAndJump.png" alt="TypeOfMove">
+										
+									</div>
+								</p>
+
+								<p>
+									<b>Next</b> step was to make the player able to quite the game and come back to their current progress in the game 
+									this was made by creaing a Filestream file that saved all the necessary information, and make the player able to load that file. 
+									This could have probable been done with json instead, which would have made the save file easier to read.
+									<b>Press images to enlarge and shrink</b>.
+									<div id="imgGallery">
+										<img src="images/SaveGamePiece.png" alt= "Savegame">
+										<img src="images/LoadGamePieces.png" alt="Loadgame">
+									</div>
+								</p>
+
+
+								<p>
+									<b>Last</b> step was to create a movement pattern for the AI opponent. This was made through teh use of Minimax with a recursion of 3. This way 
+									the AI decision making was quick while still providing a decent difficulty. This can be changed in order to make it harder and more interactive. 
+									I also created a score function that would give the AI points depending on their moves, this encouraged the AI to make moves that would mvoe all their 
+									pieces to the opposit nest in order to win. The one that moves all their pieces to the other side first is declared the winner. 
+									<b>Press images to enlarge and shrink</b>.
+									<div id="imgGallery">
+										<img src="images/MiniMax.png" alt= "MiniMax">
+										<img src="images/Expand.png" alt="Expand">
+										<img src="images/Score.png" alt="Score">
+									</div>
+								</p>
+
+								<b>Sample of movement</b><br>
+								Here is a sample of the player and AI moving in the game. Feel free to check out the scripts for the project on my <a href="https://github.com/Tomej1/ChineseCheckers"  target="blank"><b>github</b>.</a>
+
+								<div class="responsive-gifs">
+									<img src="images/ChineseCheckersGif.gif" alt="CCgif">
+								</div>
+								
+
+								<h3 class="major"></h3>
+								<h2>Here are some of my other projects</h2>
+
+
+								<section class="features">
+									<article>
+										<a href="SecondProject.html" class="image"><img src="images/Oilbaby.jpg" alt="" /></a>
+										<h3 class="major">Oilbaby</h3>
+										<p>For this project, I worked on core mechanics, enemy AI behaviour and a torch based survival system.
+											I also implemented sound effects and a save system for collectibles.</p>
+										<a href="SecondProject.html" class="special">View project</a>
+									</article>
+									<article>
+										<a href="FifthProject.html" class="image"><img src="images/RTSUM.png" alt="" /></a>
+										<h3 class="major">RTS unit selection</h3>
+										<p>This was a project done in my free time because of my passion for RTS games, exploring RTS-based mechanics.</p>
+										<a href="FifthProject.html" class="special">View project</a>
+									</article>
+									
+									
+								</section>
+
+							</div>
+						</div>
+
+					</section>
+
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Feel free to connect with me on my various platforms.</p>
+							
+							<ul class="contact">
+								<li class="icon solid fa-home"><a href="index.html" >Projects home page</a></li>
+								<li class="icon solid fa-envelope"><a href="mailto:Tom.ellstrom@gmail.com">Tom.ellstrom@gmail.com</a></li>
+								<li class="icon brands fa-github"><a href="https://github.com/Tomej1" target= "blank">TomEllstromJohansson.github.io</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/tom-ellstr%C3%B6m-johansson-7393a0272/" target= "blank">www.linkedin.com/Tomellstrom</a></li>
+	
+								
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP, editet by Tom Ellström Johansson</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.galleryview.js"></script>
+	</body>
+</html>
