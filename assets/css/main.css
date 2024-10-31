@@ -2425,7 +2425,7 @@ input, select, textarea {
 		width: 23%;
 		cursor: pointer;
 		filter: grayscale(0.75);
-		transition: 0.8s;
+		transition: 0.4s;
 		margin: 5px;
 		border: green solid;
 	}
