@@ -85,7 +85,6 @@
 												gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 												</iframe>
 										</div>
-
 									</p>
 
 									<p>
@@ -105,12 +104,13 @@
 											<b>Group:</b> 10 members </br>
 										</p>
 
-									
-
 									<h3 class="major">My contributions</h3>
-									<p><b>1. Fighting controls and mechanics</b></br></p>
+									<b>1. Fighting controls and mechanics</b></br>
+									<p><span class="image left"><img src="images/ShuraFightingGif.gif" alt="" /></span> 
+										
 									<b>• I created</b> a dynamic fighting system that connected player inputs to lists and dictorinaries of combos and animations. If the combo was in the lists it would be displayed and performed by the player
-										creating an interactive fighting style. <b>See images below, press to enlarge and shrink</b>.
+										creating an interactive fighting style. <b>See images below, press to enlarge and shrink</b>. <b>See images below, press to enlarge and shrink</b>.</p>
+									<br>
 
 										<div id="imgGallery">
 											<img src="images/ComboLists.png" alt= "combos">
@@ -119,14 +119,14 @@
 											<img src="images/PerformCombo.png" alt="executeCombo">
 										</div>
 
-					</br>
+						</br>
 							
 									<b>• Since</b> single attack combos did not feel engaging enough i implemented ways for the player to keep doing combos as long as the follow up inputs were viable combos. <b>See images below, press to enlarge and shrink</b>.
 									<div id="imgGallery">
 										<img src="images/ComboLists.png" alt= "combos">
 										<img src="images/ExecuteCombo.png" alt="executeCombo">
 									</div>
-					</br>
+						</br>
 								<b>• Problems</b>  were that if the player just kept attacking the player would be stuck in doing combo loops which made the character freeze. To fix this i created ways for the program to see if the additional
 								inputs were viable, if not viable the attacks would be reset to the start stage and they player would perform attacks all over again. <b>See images below, press to enlarge and shrink</b>.
 								<div id="imgGallery">
@@ -183,14 +183,15 @@
 								<h3 class="major"></h3>
 								<b>4. AI behaviour and animations</b>
 							</br>
+							<p><span class="image left"><img src="images/FightingAIGif.gif" alt="" /></span> 
+										
 								<b>• I created</b> an interesting and immersive AI behaviour. The idea behind the creatiion of the AI behaviour was to create states for different AI movements and descisions. I worked mostly on the attacking state and how 
 								that made the AI choose the best option for the current situation. The AI would choose the attack randomly when deciding to attack. Now this was the way I was able to implement AI attack and different outputs. 
-								As the player progressed in the game the bosses would get access to more attacks which would create a more challenging experience. I would however want to create a more advanced system where the AI made certain actions and 
-								attacks according to what the players actions were. This would make the fighting even more immersive. <b>See images below, press to enlarge and shrink</b>.
+								As the player progressed in the game the bosses would get access to more attacks which would create a more challenging experience. <b>See images below, press to enlarge and shrink</b>.</p>
+								
 								<div id="imgGallery">
 									<img src="images/AiState.png" alt= "animation">
 									<img src="images/AiAnimation.png" alt= "animation">
-									
 								</div>
 							</br>
 							<b>• Creating</b> seperate animation controllers for the  bosses made the implementation of certain behaviours easier. Since we could add in certain attacks 
